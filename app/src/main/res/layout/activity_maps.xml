@@ -21,8 +21,10 @@
             android:layout_alignParentLeft="true" />
 
         <ImageButton
+            android:id="@+id/search"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:onClick="onClick"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:src="@drawable/search"
@@ -50,6 +52,7 @@
         android:layout_height="wrap_content">
 
         <ImageButton
+            android:onClick="onClick"
             android:id="@+id/hospitals"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
@@ -61,6 +64,7 @@
 
         <ImageButton
             android:id="@+id/schools"
+            android:onClick="onClick"
             android:src="@drawable/school"
             android:layout_toEndOf="@id/hospitals"
             android:layout_alignParentBottom="true"
@@ -70,6 +74,7 @@
 
         <ImageButton
             android:id="@+id/restaurants"
+            android:onClick="onClick"
             android:src="@drawable/restaurant"
             android:layout_toEndOf="@id/schools"
             android:layout_alignParentBottom="true"
