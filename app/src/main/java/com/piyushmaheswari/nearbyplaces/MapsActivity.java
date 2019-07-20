@@ -198,7 +198,6 @@ public class MapsActivity extends FragmentActivity implements
                                 userMarkerOptions.position(latLng);
                                 userMarkerOptions.title(address);
                                 userMarkerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-                                currentLocationMarker=mMap.addMarker(userMarkerOptions);
                                 mMap.addMarker(userMarkerOptions);
                                 mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
                                 mMap.animateCamera(CameraUpdateFactory.zoomTo(10));
